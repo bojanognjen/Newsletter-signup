@@ -29,7 +29,8 @@
     
     <form action="" class="form">
       <label for="email">Email address</label>
-      <input id="email" type="email" placeholder="email@company.com"></input>
+      <small class="errorMessage"></small>
+      <input id="email" type="text" placeholder="email@company.com"></input>
       <button type="submit" class="button">Subscribe to monthly newsletter</button>
     </form>
 
@@ -41,7 +42,7 @@
 
   <div class="success hidden">
     Thanks for subscribing!
-    A confirmation email has been sent to ash@loremcompany.com.
+    A confirmation email has been sent to <b class="successEmail"></b>
     Please open it and click the button inside to confirm your subscription.
     Dismiss message
   </div>
