@@ -16,6 +16,28 @@
 
 :root {
 
+  /* ## Colors */
+
+/* ### Primary colors */
+
+--tomato: hsl(4, 100%, 67%);
+
+/* ### Neutral */
+
+--dark-slate-grey: hsl(234, 29%, 20%);
+--charcoal-grey: hsl(235, 18%, 26%);
+--grey: hsl(231, 7%, 60%);
+--white: hsl(0, 0%, 100%);
+
+/* ## Typography
+
+
+--font-size-paragraph: 16px;
+
+*/
+
+--fw-regular: 400;
+--fw-bold: 700;
 }
 
 /*
@@ -72,14 +94,52 @@
     isolation: isolate;
   }
 
-  .hidden {
-    display: none;
-  }
-
   .errorMessage {
     color: red;
   }
 
   body {
     font-family: 'Roboto Regular';
+    display: grid;
+    place-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article {
+    max-width: 375px;
+  }
+
+  .list {
+    display:grid;
+    list-style-type: none;
+  }
+
+  .list li {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+  }
+
+  .list li::before {
+    content: url(assets/images/icon-list.svg);
+    place-content: center;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+  .hidden {
+    display: none;
   }
