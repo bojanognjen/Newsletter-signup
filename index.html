@@ -8,11 +8,6 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -45,19 +40,24 @@
           <button type="submit" class="button">Subscribe to monthly newsletter</button>
         </form>
   </article>
-
-  </main>
+</main>
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
 
-  <div class="success hidden container">
-    Thanks for subscribing!
-    A confirmation email has been sent to <b class="successEmail"></b>
-    Please open it and click the button inside to confirm your subscription.
-    Dismiss message
+  <div class="success hidden">
+    <div class="success__div">
+      <img src="assets/images/icon-success.svg" alt="SuccessIcon">
+      <h2 class="success__title">Thanks for subscribing!</h2>
+      <p class="success__paragraph">
+        A confirmation email has been sent to <b class="successEmail"></b>
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+    <button class="success__button button">Dismiss message</button>
   </div>
+
 
   <!-- Success message end -->
 
