@@ -29,7 +29,7 @@
 --grey: hsl(231, 7%, 60%);
 --white: hsl(0, 0%, 100%);
 
-/* ## Typography
+/* ## Typography*/
 
 
 --font-size-paragraph: 16px;
@@ -97,6 +97,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--white);
+    border-radius: 1rem;
   }
 
   .responsive-image {
@@ -186,21 +188,22 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 1rem 1rem 2rem;
+    padding: 2rem 2rem;
   }
 
   .success__button {
     align-self: center;
     width: 90%;
     max-width: 330px;
+    margin-top: 2rem;
   }
 
   .success__div {
-    width: 90%;
+    width: clamp(10rem,40vw,90%);
     margin: auto 0;
     max-width: 80vw;
-    display: grid;
-    gap: 1.5rem;
+    display:grid;
+    gap: 1rem;
   }
 
 .hidden {
@@ -211,8 +214,9 @@
     body {
       background-color: var(--charcoal-grey);
       min-height: 100vh;
-      display: grid;
-      place-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .newsletter {
@@ -227,4 +231,16 @@
       margin-top: auto;
     }
 
+    .success {
+      min-height: auto;
+      width: auto;
+    }
+
+    .success__div {
+      max-width: 25vw;
+    }
+
+    .hidden {
+      display: none;
+    }
   }

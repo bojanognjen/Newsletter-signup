@@ -9,6 +9,8 @@ function switchPage() {
     let main = document.querySelector('.newsletter');
     let success = document.querySelector('.success');
 
+    console.log('Switching to success message');
+
     successEmail.innerText = `${email.value}`;
 
     success.classList.toggle('hidden');
