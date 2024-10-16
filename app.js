@@ -6,7 +6,7 @@ let successEmail = document.querySelector('.successEmail');
 let successButton = document.querySelector('.success__button');
 
 function switchPage() {
-    let main = document.querySelector('.newsletter');
+    let main = document.querySelector('.glavni');
     let success = document.querySelector('.success');
 
     console.log('Switching to success message');
