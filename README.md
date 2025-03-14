@@ -1,4 +1,4 @@
-p# Frontend Mentor - Newsletter sign-up form with success message
+To preview online page of this project, you can visit following link:  https://bojanognjen.github.io/Newsletter-signup/
 
 ![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
 
